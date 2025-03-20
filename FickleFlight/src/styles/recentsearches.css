@@ -1,0 +1,46 @@
+.recent-searches {
+    padding: 30px 0;
+  }
+  
+  .recent-searches h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4b5563;
+  }
+  
+  .searches-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .search-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-locations {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .location {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .direction-icon {
+    margin: 0 10px;
+    color: #6b7280;
+  }
+  
+  .search-date {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }

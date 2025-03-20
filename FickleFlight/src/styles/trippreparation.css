@@ -1,0 +1,54 @@
+.trip-preparation {
+    padding: 30px 0;
+  }
+  
+  .trip-preparation h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4b5563;
+  }
+  
+  .prep-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+  }
+  
+  .prep-item {
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .prep-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .prep-icon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .prep-title {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .prep-items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .prep-items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

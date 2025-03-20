@@ -1,0 +1,100 @@
+.search-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    min-width: 700px; /* Prevent the container from becoming too narrow */
+    display: flex; /* جعل الصندوق يحتوي جميع العناصر */
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+    align-items: center; /* محاذاة المحتوى في المنتصف */
+    overflow: hidden; /* منع أي تجاوز للصندوق */
+ padding-bottom: 55px; /* زيادة المسافة من الأسفل */
+}
+
+.search-heading {
+    font-size: 20px;
+    margin-bottom: -20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.trip-type-selector {
+    display: flex;
+    justify-content: center; /* جعل الأزرار داخل الصندوق الأبيض */
+
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 7px;
+    width: 100%; /* ضمان عدم تجاوز الحدود */
+
+}
+
+.trip-btn {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 7px 17px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.trip-btn.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap; /* السماح بتغليف العناصر إذا لم يكن هناك مساحة */
+    gap: 15px;
+    align-items: stretch; /* جعل جميع الحقول بنفس الارتفاع */
+    flex-wrap: nowrap; /* Prevent wrapping of form elements */
+    justify-content: center; /* ضمان توزيع موحد للعناصر */
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+flex: 1 1 180px; /* Allow form groups to grow/shrink but with a minimum width */
+min-width: 120px; /* Ensure each field has enough space */}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Ensure inputs take the full width of their container */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.search-btn {
+    background: #f97316;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    flex: 1 1 150px; /* Prevent the button from growing/shrinking */
+    white-space: nowrap; /* Prevent text wrapping */
+    max-width: 200px; /* منع كبر الزر بشكل زائد */
+}
+
+.search-btn:hover {
+    background: #ea580c;
+}

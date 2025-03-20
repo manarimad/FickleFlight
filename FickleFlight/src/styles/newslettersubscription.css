@@ -1,0 +1,121 @@
+.newsletter-subscription {
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #e6f0fa, #f3f4f6);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.newsletter-subscription::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.subscription-content {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.newsletter-subscription h2 {
+    font-size: 1.0rem; 
+    font-weight: bold; 
+    margin-bottom: 5px;
+    color: #2563eb; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter-subscription p {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    color: #1f2937; 
+    position: relative;
+    z-index: 2;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; 
+    background: #ffffff;
+    padding: 0; 
+    border-radius: 8px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: -100px; /* تقليل الهامش السفلي لتقريب الحقول من بعضها */
+
+}
+
+.form-group:last-child {
+    margin-bottom: 0; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 0.85rem; 
+    color: #6b7280; 
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background: #f9fafb;
+    color: #6b7280; 
+    margin-bottom: 0px; 
+}
+
+.input-field:last-child {
+    margin-bottom: 0;
+}
+
+.input-field::placeholder {
+    color: #6b7280; 
+    opacity: 1; 
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.subscribe-btn {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem; 
+    text-transform: uppercase; 
+    cursor: pointer;
+    margin-top: -15px; 
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.subscribe-btn:hover {
+    background-color: #ea580c;
+}
