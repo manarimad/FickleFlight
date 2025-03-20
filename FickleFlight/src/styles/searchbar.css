@@ -1,3 +1,7 @@
+/* ملاحظة:
+في هذا الكود تم الاستعانة بالذكاء الاصطناعي بسبب مشكلة خروج العناصر من الصندوق 
+وبعد حل المشكلة تم الرجوع الى الاسطر المضافة وفهمها جيدا وهناك بعض التعليقات التي توضح ذلك، وشكرا :)
+*/
 .search-container {
     background: #fff;
     padding: 40px;
@@ -12,7 +16,7 @@
     flex-direction: column; /* ترتيب العناصر عمودياً */
     align-items: center; /* محاذاة المحتوى في المنتصف */
     overflow: hidden; /* منع أي تجاوز للصندوق */
- padding-bottom: 55px; /* زيادة المسافة من الأسفل */
+    padding-bottom: 55px; /* زيادة المسافة من الأسفل */
 }
 
 .search-heading {
@@ -24,8 +28,6 @@
 
 .trip-type-selector {
     display: flex;
-    justify-content: center; /* جعل الأزرار داخل الصندوق الأبيض */
-
     justify-content: flex-end;
     gap: 10px;
     margin-bottom: 7px;
@@ -64,7 +66,8 @@
     flex-direction: column;
     text-align: left;
 flex: 1 1 180px; /* Allow form groups to grow/shrink but with a minimum width */
-min-width: 120px; /* Ensure each field has enough space */}
+min-width: 120px; /* Ensure each field has enough space */
+}
 
 .form-group label {
     font-size: 14px;
